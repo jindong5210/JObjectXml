@@ -6,17 +6,17 @@
   <name>JObjectXml</name>
   <url>http://jox.atjava.com</url>
   <distributionManagement>
-    <repository>
-      <id>releases</id>
-      <name>Local Releases Repository</name>
-      <url>http://localhost:8080/nexus-2.8.1-01/content/repositories/releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>snapshots</id>
-      <name>Local Snapshots Repository</name>
-      <url>http://localhost:8080/nexus-2.8.1-01/content/repositories/snapshots/</url>
-    </snapshotRepository>
-  </distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Local Releases Repository</name>
+			<url>http://192.168.6.210:8888/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Local Snapshots Repository</name>
+			<url>http://192.168.6.210:8888/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
    <dependencies>
     <dependency>
       <groupId>junit</groupId>
