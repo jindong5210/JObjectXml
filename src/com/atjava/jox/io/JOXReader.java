@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.dom4j.Document;
+import org.dom4j.DocumentHelper;
 import org.dom4j.io.SAXReader;
 
 import com.atjava.jox.JOXManager;
@@ -102,6 +103,49 @@ public class JOXReader {
 	 */
 	public <T> T readXml(File f , Class<T> cls)throws Exception{
 		return readXml(f, cls, "UTF-8");
+	}
+	
+	/**
+	 * 从指定的字符串中读取一个Document
+	 * @param <T>
+	 * @param f
+	 * @param cls
+	 * @return
+	 * @throws Exception
+	 */
+	public Document readXml(File f,String encoding)throws Exception{
+		SAXReader reader = new SAXReader();
+		reader.setEncoding(encoding);
+		return reader.read(f);
+	}
+	
+	/**
+	 * 从指定的字符串中读取一个Document
+	 * @param <T>
+	 * @param f
+	 * @param cls
+	 * @return
+	 * @throws Exception
+	 */
+	public Document readXml(File f)throws Exception{
+		SAXReader reader = new SAXReader();
+		reader.setEncoding("UTF-8");
+		return reader.read(f);
+	}
+	
+	/**
+	 * 从指定的字符串中读取一个指定的类型JavaBean对像
+	 * @param <T>
+	 * @param f
+	 * @param cls
+	 * @return
+	 * @throws Exception
+	 */
+	public <T> T readXml(String xml , Class<T> cls)throws Exception{
+		Document doc = DocumentHelper.parseText(xml);
+		JOXManager mgr = new JOXManager();
+		T obj = (T)mgr.getBean(doc.getRootElement(),cls);
+		return obj;
 	}
 	
 	/**
