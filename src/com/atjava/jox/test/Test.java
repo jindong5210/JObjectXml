@@ -19,7 +19,7 @@ public class Test {
 	public static void testWrite()throws Exception{
 		JOXWriter writer = new JOXWriter();
 		TestBean tb = new TestBean();
-		tb.setStrAttr("http://www.qingliu.com/QLight");
+		tb.setStrAttr("http://www.atjava.com/Nebula");
 		tb.setStrElmt("sdfsdfsdfsdf");
 		tb.setSuperStr("superString");
 		tb.setDateAttr(new Date());
