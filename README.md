@@ -3,18 +3,17 @@ JObjectXml v1.1.3 Released
 
 ### 1.介绍
 
-	JObjectXml是一个开源免费的第三方JAVA组件，用JObjectXml可以在XML和JAVA Bean之间进行方便的转换。
-	用户需要在JAVA BEAN的属性或者类上面使用注解来标识出该属性对应的XML文档中的节点即可。
+	JObjectXml是一个开源免费的第三方JAVA组件，用JObjectXml可以在XML和JAVA Bean之间进行方便的转换。用户需要在JAVA BEAN的属性或者类上面使用注解来标识出该属性对应的XML文档中的节点即可。
 
 ### 2.开始
 
-### 示例JavaBean
+示例JavaBean
 
-    @ClassProps(alias = "test-bean")
- public class TestBean extends TestSuperBean{
- 
- @FieldProps
- private int intAttr;
+	@ClassProps(alias = "test-bean")
+	public class TestBean extends TestSuperBean{
+	
+	@FieldProps
+	private int intAttr;
 	
 	@FieldProps(type = ElementType.ELEMENT,alias = "list-element1")
 	private List<TestGen> listElmt1;
@@ -41,7 +40,5 @@ JObjectXml v1.1.3 Released
 	private List<String> strList1;
 	
 	}
-
-  
 
 
