@@ -1,20 +1,46 @@
 JObjectXml v1.1.3 Released
 ----------------------------------- 
 
-### 1.Getting Started
+### 1.介绍
 
-  JObjectXml是一个开源免费的第三方JAVA组件。用JObjectXml可以使XML和JAVA Bean之间进行方便的转r
+    JObjectXml是一个开源免费的第三方JAVA组件，用JObjectXml可以在XML和JAVA Bean之间进行方便的转换。用户需要在JAVA BEAN的属性或者类上面使用注解来标识出该属性对应的XML文档中的节点即可。
 
-### 2.Getting Started
+### 2.开始
 
+### 示例JavaBean
 
-### 比如我们可以在多行文本框里输入一段代码,来一个Java版本的HelloWorld吧  
-    public class HelloWorld {  
+    @ClassProps(alias = "test-bean")
+    public class TestBean extends TestSuperBean{
+    
+    @FieldProps
+    private int intAttr;
+	
+	@FieldProps(type = ElementType.ELEMENT,alias = "list-element1")
+	private List<TestGen> listElmt1;
+	
+	@FieldProps(type = ElementType.ELEMENTLIST,alias = "list-element2")
+	private List<TestSuperBean> listElmt2;
+	
+	@FieldProps(alias = "xmlns1")
+	private String strAttr;
+	
+	@FieldProps(type = ElementType.ELEMENT)
+	private TestGen testGen;
+	
+	@FieldProps
+	private Date dateAttr;
+	
+	@FieldProps(type = ElementType.ELEMENT)
+	private String strElmt;
+	
+	@FieldProps(type = ElementType.ELEMENTLIST,alias = "str-list",strAlias = "string")
+	private List<String> strList;
+	
+	@FieldProps(type = ElementType.ELEMENTLIST,alias = "str-list1",strAlias = "string1")
+	private List<String> strList1;
+	
+	}
+
   
-      /**  
-      * @param args  
-       */  
-      public static void main(String[] args) {  
-        System.out.println("HelloWorld!");  
-      }
-    }
+
+
