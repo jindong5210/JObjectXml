@@ -41,4 +41,22 @@ JObjectXml v1.1.3 Released
 	
 	}
 
+### 3.转换
 
+JavaBean to Xml
+
+	JOXWriter writer = new JOXWriter();
+	TestBean tb = new TestBean();
+	tb.setStrAttr("http://www.atjava.com/Nebula");
+	tb.setStrElmt("sdfsdfsdfsdf");
+	tb.setSuperStr("superString");
+	tb.setDateAttr(new Date());
+	
+	writer.writeXml(new File("/Users/jin-dong/123.xml"), tb);
+
+Xml to JavaBean
+
+	JOXReader reader = new JOXReader();
+	System.out.println(reader.readXml(new File("c:/123.xml"), TestBean.class));
+	
+	
