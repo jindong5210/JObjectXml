@@ -13,7 +13,7 @@ import com.atjava.jox.convert.Converter;
 import com.atjava.jox.convert.XmlDefaultConverter;
 
 /**
- * XML�ļ���ȡ
+ * XML文件读取
  * @author kyo
  *
  */
@@ -30,7 +30,7 @@ public class JOXReader {
 	}
 
 	/**
-	 * ��ָ�����ļ��и���ָ���ı����ָ�������Ͷ�ȡһ��JavaBean����
+	 * 从指定的文件中根据指定的编码和指定的类型读取一个JavaBean对像
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -60,7 +60,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * ��ָ���������ļ����и���ָ���ı����ָ�������Ͷ�ȡһ��JavaBean���񼯺�
+	 * 从指定的数据文件夹中根据指定的编码和指定的类型读取一个JavaBean对像集合
 	 * @param folder
 	 * @param cls
 	 * @param encoding
@@ -94,7 +94,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * ��ָ���������ļ��ж�ȡһ��ָ��������JavaBean����
+	 * 从指定的数据文件中读取一个指定的类型JavaBean对像
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -106,7 +106,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * ��ָ�����ַ����ж�ȡһ��Document
+	 * 从指定的字符串中读取一个Document
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -120,7 +120,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * ��ָ�����ַ����ж�ȡһ��Document
+	 * 从指定的字符串中读取一个Document
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -134,7 +134,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * ��ָ�����ַ����ж�ȡһ��ָ��������JavaBean����
+	 * 从指定的字符串中读取一个指定的类型JavaBean对像
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -149,7 +149,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * ��ָ���������ļ����ж�ȡһ��ָ��������JavaBean���񼯺�
+	 * 从指定的数据文件夹中读取一个指定的类型JavaBean对像集合
 	 * @param folder
 	 * @param cls
 	 * @return
