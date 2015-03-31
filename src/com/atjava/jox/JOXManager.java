@@ -31,8 +31,8 @@ import com.atjava.jox.convert.Converter;
 import com.atjava.jox.convert.XmlDefaultConverter;
 
 /**
- * @author  DCJ kyo
- * @version 1.0
+ * XML file manager
+ * @author  kyo
  */
 public class JOXManager {
 	

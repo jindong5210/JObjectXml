@@ -16,7 +16,7 @@ import com.atjava.jox.convert.Converter;
 import com.atjava.jox.convert.XmlDefaultConverter;
 
 /**
- * XML文件写入
+ * XML file writer
  * @author kyo
  *
  */
@@ -33,8 +33,9 @@ public class JOXWriter {
 	}
 	
 	/**
-	 * 将JavaBean集合写入文件夹
-	 * 存储文件格式为data_i.xml,i从0开始递增。
+	 * Write java bean list to XML folder.<br/>
+	 * Data file format : data_i.xml
+	 * 
 	 * @param folder
 	 * @param ddoList
 	 * @throws Exception
@@ -45,8 +46,8 @@ public class JOXWriter {
 	}
 	
 	/**
-	 * 将JavaBean集合写入文件夹(用指定的编码) 
-	 * 存储文件格式为data_i.xml,i从0开始递增。
+	 * Write java bean list to XML folder by default encoding.<br/>
+	 * Data file format : data_i.xml
 	 * @param folder
 	 * @param ddoList
 	 * @param encoding
@@ -94,7 +95,8 @@ public class JOXWriter {
 	}
 	
 	/**
-	 * 将一个指定的JavaBean对像保存为一个XML数据文件
+	 * Write java bean to a XML file by default encoding.
+	 * 
 	 * @param xmlFile
 	 * @param xmlDdo
 	 * @throws Exception
@@ -105,7 +107,7 @@ public class JOXWriter {
 	}
 	
 	/**
-	 * 将一个指定的JavaBean对像保存为一个XML数据文件(用指定的编码) 
+	 * Write java bean to a XML file.
 	 * @param xmlFile
 	 * @param xmlDdo
 	 * @throws Exception
@@ -117,7 +119,7 @@ public class JOXWriter {
 	}
 	
 	/**
-	 * 将一个指定的XMLDOM对像保存为一个XML数据文件(用指定的编码) 
+	 * Write XML document to a XML file.
 	 * @param xmlFile
 	 * @param xmlDdo
 	 * @throws Exception
@@ -140,7 +142,7 @@ public class JOXWriter {
 	}
 	
 	/**
-	 * 把一个JavaBean对像转换为XMLDOM对像(用指定的编码) 
+	 * Convert a java bean to XML document by default encoding.
 	 * @param xmlFile
 	 * @param xmlDdo
 	 * @throws Exception

@@ -1,3 +1,11 @@
+//$Id: JOXReader.java,v 1.1 2009-12-7 kyo Exp $
+/******************************************************************************
+ * Created on 2009-12-7
+ * Copyright(C) by www.atjava.com
+ *
+ * 2009-2-19      kyo
+ *
+ ******************************************************************************/
 package com.atjava.jox.io;
 
 import java.io.File;
@@ -13,7 +21,7 @@ import com.atjava.jox.convert.Converter;
 import com.atjava.jox.convert.XmlDefaultConverter;
 
 /**
- * XML文件读取
+ * XML file reader
  * @author kyo
  *
  */
@@ -30,7 +38,7 @@ public class JOXReader {
 	}
 
 	/**
-	 * 从指定的文件中根据指定的编码和指定的类型读取一个JavaBean对像
+	 * Read a java bean Object from a XML file
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -60,7 +68,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * 从指定的数据文件夹中根据指定的编码和指定的类型读取一个JavaBean对像集合
+	 * Read a java bean Object collection from a XML folder
 	 * @param folder
 	 * @param cls
 	 * @param encoding
@@ -94,7 +102,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * 从指定的数据文件中读取一个指定的类型JavaBean对像
+	 * Read a java bean Object from a XML file by default encoding
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -106,7 +114,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * 从指定的字符串中读取一个Document
+	 * Read XML document from a XML file
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -120,7 +128,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * 从指定的字符串中读取一个Document
+	 * Read XML document from a String
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -134,7 +142,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * 从指定的字符串中读取一个指定的类型JavaBean对像
+	 * Read a java bean Object from a XML String
 	 * @param <T>
 	 * @param f
 	 * @param cls
@@ -149,7 +157,7 @@ public class JOXReader {
 	}
 	
 	/**
-	 * 从指定的数据文件夹中读取一个指定的类型JavaBean对像集合
+	 * Read a java bean Object collection from a XML folder by default encoding.
 	 * @param folder
 	 * @param cls
 	 * @return
